@@ -35,8 +35,8 @@ export function SignUp() {
                 setSession(result);
                 form.reset();
                 setError(new CustomError(""));
-                setResult("Compte créé 👍");
-                setTimeout(() => {navigate("/messages")}, 2000);
+                setResult("Account Created Successfully");
+                setTimeout(() => {navigate("/login")}, 2000);
             }, (loginError: CustomError) => {
                 setResult("");
                 setError(loginError);
