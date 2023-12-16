@@ -12,7 +12,7 @@ export function ChatBoard() {
     const [, selectChannel] = useRecoilState(selectedChannelState);
     const session = useRecoilValue(sessionState);
 
-    const beamsClient = new PusherClient({
+    /*const beamsClient = new PusherClient({
         instanceId: '2942fdbc-79ef-4d98-9236-0ab6a1660e21',
     });
 
@@ -54,7 +54,7 @@ export function ChatBoard() {
             }
         });
     }, [session, navigate]);
-
+*/
     useEffect(() => {
         if (channel !== undefined && type !== undefined && parseInt(channel) >= 0 && type !== "") {
             selectChannel({ type: type, id: parseInt(channel) });
