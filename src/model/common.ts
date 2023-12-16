@@ -12,11 +12,33 @@ export interface User {
     external_id?: string;
 }
 
+export interface Room {
+    room_id: number;
+    name: string;
+    created_on: string;
+}
+
+export interface Message {
+    id: number;         
+    content: string;
+    channel_id: string; 
+    type: string;       
+    created_at: string;
+    sender: string;
+}
+
+
 export interface Session {
     token: string;
     username?: string;
     id?: number;
     externalId: string;
+}
+
+
+export interface Channel {
+    id: number;
+    type: string;
 }
 
 

@@ -1,10 +1,16 @@
-import './App.css';
-import {Login} from "./user/Login";
+import { RecoilRoot } from 'recoil';
+import Router from './Router/Router';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+
+const defaultTheme = extendTheme({});
 
 function App() {
-
   return (
-      <Login/>
+    <RecoilRoot>
+      <ChakraProvider theme={defaultTheme}>
+        <Router />
+      </ChakraProvider>
+    </RecoilRoot>
   );
 }
 
