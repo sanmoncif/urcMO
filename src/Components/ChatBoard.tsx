@@ -1,4 +1,4 @@
-import { Message } from "./message/Message";
+import { Message } from "./Message/Message";
 import { UsersRooms } from "./UsersRooms/UsersRooms";
 import { Box, HStack } from "@chakra-ui/react";
 import { useNavigate, useParams } from "react-router-dom";
