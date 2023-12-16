@@ -1,5 +1,5 @@
-import {ErrorCallback, EmptyCallback, Channel} from "../../model/common";
-import {CustomError} from "../../model/CustomError";
+import {ErrorCallback, EmptyCallback, Channel} from "../../Model/common";
+import {CustomError} from "../../Model/CustomError";
 
 export function sendMessageApi(channel: Channel, message: string, token: string, sender: string, onResult: EmptyCallback, onError: ErrorCallback) {
     fetch("/api/message",

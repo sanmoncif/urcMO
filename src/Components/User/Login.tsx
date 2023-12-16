@@ -14,10 +14,10 @@ import {useEffect, useState} from "react";
 import {loginUser} from "./loginApi";
 import {useRecoilState} from "recoil";
 import {sessionState} from "../../Store/store";
-import {Session} from "../../model/common";
+import {Session} from "../../Model/common";
 //import Container from "@mui/material/Container";
 import {useNavigate} from "react-router-dom";
-import {CustomError} from "../../model/CustomError";
+import {CustomError} from "../../Model/CustomError";
 
 export function Login() {
 

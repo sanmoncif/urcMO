@@ -1,5 +1,5 @@
-import {Session, SessionCallback, ErrorCallback, User} from "../../model/common";
-import {CustomError} from "../../model/CustomError";
+import {Session, SessionCallback, ErrorCallback, User} from "../../Model/common";
+import {CustomError} from "../../Model/CustomError";
 
 
 export function registerUser(user: User, onResult: SessionCallback, onError: ErrorCallback) {

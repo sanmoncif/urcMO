@@ -3,7 +3,7 @@ import {useState} from "react";
 import {registerUser} from "./loginApi";
 import {useRecoilState} from "recoil";
 import {sessionState} from "../../Store/store";
-import {Session} from "../../model/common";
+import {Session} from "../../Model/common";
 import { 
     Alert, 
     Box, 
@@ -15,9 +15,9 @@ import {
     VStack 
 } from '@chakra-ui/react';
 import {useNavigate} from "react-router-dom";
-import {CustomError} from "../../model/CustomError";
+import {CustomError} from "../../Model/CustomError";
 
-export function Registration() {
+export function SignUp() {
 
     const [error, setError] = useState({} as CustomError);
     const [result, setResult] = useState("");

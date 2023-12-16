@@ -2,13 +2,13 @@ import { Suspense, useEffect } from 'react';
 import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
 import { Container } from '@chakra-ui/react';
 import NavBar from "../Components/NavBar/NavBar";
-import { Registration } from "../Components/user/Registration";
-import { Login } from "../Components/user/Login";
+import { SignUp } from "../Components/User/Signup";
+import { Login } from "../Components/User/Login";
 import { ChatBoard } from "../Components/ChatBoard";
 import { useRecoilState } from "recoil";
 import { sessionState } from "../Store/store";
 import ErrorBoundary from "../Components/ErrorBoundary";
-import Test from '../Components/user/test';
+import Test from '../Components/User/test';
 import Loading from '../Components/Loading';
 import NotFound from '../Components/NotFound';
 
@@ -34,7 +34,7 @@ export default () => {
                         <Container maxWidth="container.xl" mt={20}>
                             <Routes>
                                 <Route path="/" element={<Navigate to="/login" replace={true} />} />
-                                <Route path="/register" element={<Registration />} />
+                                <Route path="/register" element={<SignUp />} />
                                 <Route path="/login" element={<Login />} />
                                 <Route path="/messages" element={<ChatBoard />} />
                                 <Route path="/messages/:type/:channel" element={<ChatBoard />} />

@@ -1,6 +1,6 @@
 import {atom, selector} from "recoil";
-import {BEARER, Message, Room, User, Session, Channel} from "../model/common";
-import {CustomError} from "../model/CustomError";
+import {BEARER, Message, Room, User, Session, Channel} from "../Model/common";
+import {CustomError} from "../Model/CustomError";
 
 
 

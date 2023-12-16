@@ -3,7 +3,7 @@ import { Box, Button, Divider, Text, Input, Flex } from '@chakra-ui/react';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import { messagesState, messageUpdate, selectedChannelState, usersMapState, sessionState, roomsMapState } from '../../Store/store';
 import { sendMessageApi } from './MessageApi';
-import { CustomError } from '../../model/CustomError';
+import { CustomError } from '../../Model/CustomError';
 
 export function Message() {
 

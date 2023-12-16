@@ -1,5 +1,5 @@
 import { Component, ErrorInfo, ReactNode } from 'react';
-import { CustomError } from '../model/CustomError';
+import { CustomError } from '../Model/CustomError';
 import { Navigate } from 'react-router-dom';
 
 interface ErrorBoundaryProps {
