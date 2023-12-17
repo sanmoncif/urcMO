@@ -1,11 +1,10 @@
 import { Message } from "./Message/Message";
 import { UsersRooms } from "./UsersRooms/UsersRooms";
 import { Box, HStack } from "@chakra-ui/react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { selectedChannelState, sessionState } from "../Store/store";
-import { Client as PusherClient, TokenProvider } from "@pusher/push-notifications-web";
 
 export function ChatBoard() {
     const { type, channel } = useParams();
