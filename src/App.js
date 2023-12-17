@@ -1,5 +1,5 @@
 import { RecoilRoot } from 'recoil';
-import Router from './Router/Router';
+import Router from './Router/Router.tsx';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 
 const defaultTheme = extendTheme({});
