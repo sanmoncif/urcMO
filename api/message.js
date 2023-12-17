@@ -1,4 +1,4 @@
-import { getConnecterUser, triggerNotConnected } from "../lib/session";
+import { getConnecterUser, triggerNotConnected } from "../lib/session.js";
 import { db } from '@vercel/postgres';
 
 export default async (request, response) => {
