@@ -63,15 +63,19 @@ export function ChatBoard() {
 
     return (
         <>
-            <Box bg="gray.100" w="100%" p={4}>
-                <HStack spacing={4}>
-                    <Box w="30%" bg="white" borderRadius="lg" p={4}>
-                        <UsersRooms />
-                    </Box>
-                    <Box w="70%" bg="white" borderRadius="lg" p={4}>
-                        <Message />
-                    </Box>
-                </HStack>
+            <Box height='100vh' display='flex' flexDirection='column' bg='gray.100' p='20px'>
+                {/* Scrollable Content Area with bottom padding/margin */}
+                <Box flex='1' overflowY='auto' pb='100px'> 
+                    <HStack spacing={4}>
+                        <Box w="30%" bg="white" borderRadius="lg" p={4}>
+                            <UsersRooms />
+                        </Box>
+                    </HStack>
+                </Box>
+
+                <Box w="44.3%" position="fixed" bottom="0" bg="white" borderRadius="lg" p={4} ml={370} >
+                    <Message />
+                </Box>
             </Box>
         </>
     );

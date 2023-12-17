@@ -1,6 +1,6 @@
 
 import {useState} from "react";
-import {registerUser} from "./loginApi";
+import {signupUser} from "./SignupApi";
 import {useRecoilState} from "recoil";
 import {sessionState} from "../../Store/store";
 import {Session} from "../../Model/common";
@@ -30,7 +30,7 @@ export function SignUp() {
         event.preventDefault();
         const form = event.currentTarget;
         const data = new FormData(form);
-        registerUser({user_id: -1, username:  data.get('login') as string, email: data.get('email') as string, password: data.get('password') as string},
+        signupUser({user_id: -1, username:  data.get('login') as string, email: data.get('email') as string, password: data.get('password') as string},
             (result: Session) => {
                 setSession(result);
                 form.reset();

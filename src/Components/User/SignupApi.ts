@@ -1,9 +1,8 @@
 import {Session, SessionCallback, ErrorCallback, User} from "../../Model/common";
 import {CustomError} from "../../Model/CustomError";
 
-
-export function loginUser(user: User, onResult: SessionCallback, onError: ErrorCallback) {
-    fetch("/api/login",
+export function signupUser(user: User, onResult: SessionCallback, onError: ErrorCallback) {
+    fetch("/api/signup",
         {
             method: "POST", // ou 'PUT'
             headers: {

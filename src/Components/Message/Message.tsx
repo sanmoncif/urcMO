@@ -45,7 +45,7 @@ export function Message() {
 
 
     return (
-        <Box height='100%' p='20px' display='flex' flexDirection='column' bg='white'>
+        <Box height='100%' p='25px' display='flex' flexDirection='column' bg='white'>
             <Flex direction="column" flex='1' overflowY='auto'>
                 {messages.length > 0 &&
                     [...messages].reverse().filter((item) => users.get(channel.id)?.username == item.sender || item.sender == session.username || (rooms.get(channel.id)?.room_id == parseInt(item.channel_id) && item.type == "room")).map((message, index) => {
