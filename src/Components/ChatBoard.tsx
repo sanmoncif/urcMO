@@ -73,7 +73,7 @@ export function ChatBoard() {
                     </HStack>
                 </Box>
 
-                <Box w="44.3%" position="fixed" bottom="0" bg="white" borderRadius="lg" p={4} ml={370} >
+                <Box w="50%" position="fixed" bottom="0" bg="white" borderRadius="lg" p={4} ml={370} >
                     <Message />
                 </Box>
             </Box>
